@@ -5,19 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bed4f71c-ece7-4cd2-b035-5368b85d4a93" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Service/Operations.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Data.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Functions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/CalculationView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/Text.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/task.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Service/Operations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Service/Operations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Data.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Data.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Functions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Functions.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -41,20 +41,20 @@ public class Functions implements Data {
 
     @Override
     public String dateTime() {
-        DateFormat dateF = new SimpleDateFormat("dd-MM-yyyy HH:mm:ss");
+        DateFormat dateF = new SimpleDateFormat("dd-MM-yyyy HH:mm - ");
         Calendar cal = Calendar.getInstance();
         String time = dateF.format(cal.getTime());
         return time;
     }
 
     @Override
-    public ArrayList<String> writeHistory(String result) {
+    public void writeHistory(String result) {
         history.add(result);
-        return null;
     }
 
     @Override
-    public String readHistory() {
+    public void readHistory() {
+        System.out.println();
         if(history.isEmpty()){
             Text.noCalculations();
         } else {
@@ -62,7 +62,7 @@ public class Functions implements Data {
                 System.out.println(item);
             }
         }
-        return null;
+        System.out.println();
     }
 
     public String sumComplex(Integer numA, Integer numB, Integer numA2, Integer numB2) {
@@ -71,11 +71,11 @@ public class Functions implements Data {
             sB.append(numA + numA2)
                     .append("+")
                     .append(numB + numB2)
-                    .append("*i");
+                    .append("i");
         } else if (numB + numB2 < 0) {
             sB.append(numA + numA2)
                     .append(numB + numB2)
-                    .append("*i");
+                    .append("i");
         } else {
             sB.append(numA + numA2);
         }
@@ -88,11 +88,11 @@ public class Functions implements Data {
             sB.append(numA - numA2)
                     .append("+")
                     .append(numB - numB2)
-                    .append("*i");
+                    .append("i");
         } else if (numB - numB2 < 0) {
             sB.append(numA - numA2)
                     .append(numB - numB2)
-                    .append("*i");
+                    .append("i");
         } else {
             sB.append(numA - numA2);
         }
@@ -105,11 +105,11 @@ public class Functions implements Data {
             sB.append(numA * numA2 - numB * numB2)
                     .append("+")
                     .append(numA * numB2 - numA2 * numB)
-                    .append("*i");
+                    .append("i");
         } else if ((numA * numB2 - numA2 * numB) < 0) {
             sB.append(numA * numA2 - numB * numB2)
                     .append(numA * numB2 - numA2 * numB)
-                    .append("*i");
+                    .append("i");
         } else {
             sB.append(numA * numA2 - numB * numB2);
         }
@@ -119,16 +119,16 @@ public class Functions implements Data {
     public String divisionComplex(Integer numA, Integer numB, Integer numA2, Integer numB2) {
         StringBuilder sB = new StringBuilder();
         if((numA2 * numB - numA * numB2) > 0){
-            sB.append((numA * numA2 + numB * numB2) / (numA2 * numA2 + numB2 * numB2))
+            sB.append((double) (numA * numA2 + numB * numB2) / (numA2 * numA2 + numB2 * numB2))
                     .append("+")
-                    .append((numA2 * numB - numA * numB2) / (numA2 * numA2 + numB2 * numB2))
-                    .append("*i");
+                    .append((double)(numA2 * numB - numA * numB2) / (numA2 * numA2 + numB2 * numB2))
+                    .append("i");
         } else if ((numA2 * numB - numA * numB2) < 0) {
-            sB.append((numA * numA2 + numB * numB2) / (numA2 * numA2 + numB2 * numB2))
-                    .append((numA2 * numB - numA * numB2) / (numA2 * numA2 + numB2 * numB2))
-                    .append("*i");
+            sB.append((double)(numA * numA2 + numB * numB2) / (numA2 * numA2 + numB2 * numB2))
+                    .append((double)(numA2 * numB - numA * numB2) / (numA2 * numA2 + numB2 * numB2))
+                    .append("i");
         } else {
-            sB.append((numA * numA2 + numB * numB2) / (numA2 * numA2 + numB2 * numB2));
+            sB.append((double)(numA * numA2 + numB * numB2) / (numA2 * numA2 + numB2 * numB2));
         }
         return sB.toString();
     }

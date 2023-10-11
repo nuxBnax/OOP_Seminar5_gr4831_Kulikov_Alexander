@@ -7,17 +7,20 @@ import view.Text;
 
 import java.util.Scanner;
 
+import static Service.Operations.functions;
+
 public class Controller {
 
-Functions functions = new Functions();
-    public void menu() {
+
+    public static void menu() {
 
         Scanner cs = new Scanner(System.in);
-        Text.welcome();
 
-        int num = cs.nextInt();
         boolean flag = true;
         while (flag) {
+            Text.welcome();
+            int num = cs.nextInt();
+
             switch (num) {
                 case 1:
                     Operations.subMenu();
@@ -35,7 +38,8 @@ Functions functions = new Functions();
                     Text.noThatNumber();
                     break;
             }
-            cs.close();
+
         }
+        cs.close();
     }
 }

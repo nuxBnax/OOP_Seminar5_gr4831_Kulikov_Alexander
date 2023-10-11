@@ -9,7 +9,7 @@ public interface Data {
     String multiplication(Number numberA, Number numberB);
     String dateTime();
 
-    ArrayList<String> writeHistory(String result);
+    void writeHistory(String result);
 
-    String readHistory();
+    void readHistory();
 }

@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 
 public class Operations {
-    static Functions functions = new Functions();
+    public static Functions functions = new Functions();
     //    static ArrayList<String> history = new ArrayList<>();
     static CalculationView print = new CalculationView();
 
@@ -68,7 +68,7 @@ public class Operations {
                 Text.noThatNumber();
                 break;
         }
-        cs.close();
+//        cs.close();
     }
 
     public static void subMenuComplex() {
@@ -151,6 +151,6 @@ public class Operations {
                 Text.noThatNumber();
                 break;
         }
-        cs.close();
+//        cs.close();
     }
 }
