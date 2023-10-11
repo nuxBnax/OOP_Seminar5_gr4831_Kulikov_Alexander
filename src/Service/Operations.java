@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Operations {
     public static Functions functions = new Functions();
-    //    static ArrayList<String> history = new ArrayList<>();
+
     static CalculationView print = new CalculationView();
 
     public static void subMenu() {
@@ -24,9 +24,9 @@ public class Operations {
 
                 Text.sumAB();
                 Text.inputNumberA();
-                int numA = cs.nextInt();
+                double numA = cs.nextInt();
                 Text.inputNumberB();
-                int numB = cs.nextInt();
+                double numB = cs.nextInt();
                 functions.writeHistory(functions.dateTime() + functions.sum(numA, numB));
                 print.printResult(functions.sum(numA, numB));
                 Text.loadedToHistory();
@@ -68,7 +68,7 @@ public class Operations {
                 Text.noThatNumber();
                 break;
         }
-//        cs.close();
+
     }
 
     public static void subMenuComplex() {
@@ -151,6 +151,6 @@ public class Operations {
                 Text.noThatNumber();
                 break;
         }
-//        cs.close();
+
     }
 }

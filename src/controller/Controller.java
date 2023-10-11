@@ -19,7 +19,9 @@ public class Controller {
         boolean flag = true;
         while (flag) {
             Text.welcome();
+
             int num = cs.nextInt();
+
 
             switch (num) {
                 case 1:
@@ -40,6 +42,6 @@ public class Controller {
             }
 
         }
-        cs.close();
+
     }
 }

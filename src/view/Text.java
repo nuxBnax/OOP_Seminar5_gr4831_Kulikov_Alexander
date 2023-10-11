@@ -1,11 +1,6 @@
 package view;
 
 public class Text {
-    String text;
-
-    public Text(String text) {
-        this.text = text;
-    }
 
     public static void welcome() {
         System.out.println("С какими числами хотите произвести вычисления ?\n" +
@@ -45,9 +40,6 @@ public class Text {
         System.out.println("Выберите операцию с комплексными числами типа (А + Вi) и (А2 + В2i)");
     }
 
-    public static void operationWillBeExecute() {
-        System.out.println("Будет выполнено");
-    }
     public static void subtractionAB(){
         System.out.println("Вычитание (А - В)");
     }
@@ -75,12 +67,7 @@ public class Text {
     public static void loadedToHistory(){
         System.out.println("Результат вычислений записан в историю");
     }
-    public static void askWannaLookHistory(){
-        System.out.println("Хотите просмотреть историю?");
-    }
-    public static void askContinue(){
-        System.out.println("Продолжить вычисления?");
-    }
+
     public static void noCalculations(){
         System.out.println("Вы еще не произвели никаких вычислений, поэтому записей нет");
     }
