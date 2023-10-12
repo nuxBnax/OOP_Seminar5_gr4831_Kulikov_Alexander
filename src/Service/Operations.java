@@ -11,7 +11,9 @@ public class Operations {
     public static Functions functions = new Functions();
 
     static CalculationView print = new CalculationView();
-
+    /** subMenu() - Функция предоставляет выбрать операцию с числами
+     /* (сложение, вычитание, умножение, деление)
+     */
     public static void subMenu() {
         Scanner cs = new Scanner(System.in);
         Text.chooseOperation();
@@ -70,7 +72,9 @@ public class Operations {
         }
 
     }
-
+    /** subMenu() - Функция предоставляет выбрать операцию с комплексными числами
+     /* (сложение, вычитание, умножение, деление)
+     */
     public static void subMenuComplex() {
         Scanner cs = new Scanner(System.in);
         Text.chooseComplexOperation();

@@ -64,7 +64,9 @@ public class Functions implements Data {
         }
         System.out.println();
     }
-
+    /** sumComplex() - Функция суммирует комплексное число вида (A + Bi)
+     /*  с числом (A2 + B2i)
+     */
     public String sumComplex(Integer numA, Integer numB, Integer numA2, Integer numB2) {
         StringBuilder sB = new StringBuilder();
         if(numB + numB2 > 0){
@@ -82,6 +84,8 @@ public class Functions implements Data {
         return sB.toString();
     }
 
+    /** subtractionComplex() - Функция вычисляет выражение (A + Bi) - (A2 + B2i)
+     */
     public String subtractionComplex(Integer numA, Integer numB, Integer numA2, Integer numB2) {
         StringBuilder sB = new StringBuilder();
         if(numB - numB2 > 0){
@@ -99,6 +103,8 @@ public class Functions implements Data {
         return sB.toString();
     }
 
+    /** multiplicationComplex() - Функция вычисляет выражение (A + Bi) * (A2 + B2i)
+     */
     public String multiplicationComplex(Integer numA, Integer numB, Integer numA2, Integer numB2) {
         StringBuilder sB = new StringBuilder();
         if((numA * numB2 - numA2 * numB) > 0){
@@ -116,6 +122,8 @@ public class Functions implements Data {
         return sB.toString();
     }
 
+    /** divisionComplex() - Функция вычисляет выражение (A + Bi) / (A2 + B2i)
+     */
     public String divisionComplex(Integer numA, Integer numB, Integer numA2, Integer numB2) {
         StringBuilder sB = new StringBuilder();
         if((numA2 * numB - numA * numB2) > 0){

@@ -2,7 +2,6 @@ package controller;
 
 import Service.Operations;
 
-import model.Functions;
 import view.Text;
 
 import java.util.Scanner;
@@ -11,7 +10,9 @@ import static Service.Operations.functions;
 
 public class Controller {
 
-
+    /** menu() - Функция запускает меню с выбором
+     *  вариантов вычислений с целыми, дробными или комплексными числами
+     */
     public static void menu() {
 
         Scanner cs = new Scanner(System.in);
