@@ -6,16 +6,15 @@ import view.Text;
 
 import java.util.Scanner;
 
-import static Service.Operations.functions;
-
 public class Controller {
 
     /** menu() - Функция запускает меню с выбором
      *  вариантов вычислений с целыми, дробными или комплексными числами
      */
-    public static void menu() {
+    public void menu() {
 
         Scanner cs = new Scanner(System.in);
+        Operations operations = new Operations();
 
         boolean flag = true;
         while (flag) {
@@ -25,21 +24,11 @@ public class Controller {
 
 
             switch (num) {
-                case 1:
-                    Operations.subMenu();
-                    break;
-                case 2:
-                    Operations.subMenuComplex();
-                    break;
-                case 3:
-                    functions.readHistory();
-                    break;
-                case 4:
-                    flag = false;
-                    break;
-                default:
-                    Text.noThatNumber();
-                    break;
+                case 1 -> operations.subMenu();
+                case 2 -> operations.subMenuComplex();
+                case 3 -> operations.functions.readHistory();
+                case 4 -> flag = false;
+                default -> Text.noThatNumber();
             }
 
         }
